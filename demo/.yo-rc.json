@@ -1,0 +1,45 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "tech.ippon",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.3.1",
+    "applicationType": "monolith",
+    "baseName": "jhipsterdemo",
+    "packageName": "tech.ippon",
+    "packageFolder": "tech/ippon",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTZlYWI0YzJiYWYzMGIxZTY2MjAwNDIyZmRhMGI0NWNhY2Q3ZjIwMGI5OGM5OGRhYmRkNjcyZTUyY2UyMzM5Yzc1ZWU0ZjBmZjRlODcxMTEyYmE1ZDk4MzA1NWM3NzYzYjBhMjc1ZWVlMTMwMmM3ZjE0ODdkZWRjYTUyYWRhNDQ=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "blueprints": []
+  }
+}

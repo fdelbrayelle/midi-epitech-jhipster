@@ -1,0 +1,12 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "demo"
+    ],
+    "directoryPath": "../",
+    "monitoring": "no",
+    "consoleOptions": [],
+    "serviceDiscoveryType": false,
+    "jwtSecretKey": "NTA0ZDBiNDk3OTAzZDBiMzhhNDE2Nzc5YzVkYjgxYmNkZGRjYzMzYTJkYjE4YzY0ZGMxNzZiZTU4ODdiOGVlYzcwMWEzZWIxNGQ3NzJjNjMzMWIwNzI3ODZjYjI3OTc4OWI4NQ=="
+  }
+}

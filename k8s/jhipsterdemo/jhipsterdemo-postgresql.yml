@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: jhipsterdemo-postgresql
+  namespace: default
+  labels:
+    app: jhipsterdemo-postgresql
+type: Opaque
+data:
+  postgresql-password: MDMwZjljNjNjNzJiOGE5ZThlYmE2ZDg1ODczMTBkMmQ1MzFkM2I5YzM1MjcxNTkwZTQ1N2RkZGUyNDJmOGMzMThkMTk5ZjY1MmE1MDk3YmM4N2ZlYTg2NzY1ZTMwOWM1Y2RiZmI5MzRlMWUyYzFhZjRhZjAxMzMxNzJlNTk2ZDI3ZGFhNGJlZWZkNDQyODhlNDk0ZDYyOTdkYTMyYTc5NWRlNjZiNWY2ZjdmMGVkNDA4ODE1NTRjYmUxMWU2NGQ2ZGFlNmYxZGFiZjM3YzJhYjk1MzIzNjQ2Nzg1ZDcwNDhmZTE5N2U0ODgxODZkNjA1MzgyZDI4ZWExMjg3YzU4Ng==
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jhipsterdemo-postgresql
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jhipsterdemo-postgresql
+  template:
+    metadata:
+      labels:
+        app: jhipsterdemo-postgresql
+    spec:
+      volumes:
+        - name: data
+          emptyDir: {}
+      containers:
+        - name: postgres
+          image: postgres:11.5
+          env:
+            - name: POSTGRES_USER
+              value: jhipsterdemo
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: jhipsterdemo-postgresql
+                  key: postgresql-password
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/postgresql/
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jhipsterdemo-postgresql
+  namespace: default
+spec:
+  selector:
+    app: jhipsterdemo-postgresql
+  ports:
+    - port: 5432

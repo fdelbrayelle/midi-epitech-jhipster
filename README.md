@@ -1,12 +1,12 @@
-# Lundi technique - JHipster
+# Mici technique Epitech - JHipster
 
-<p align="center"><img src="https://github.com/fdelbrayelle/lundi-tech-jhipster/blob/master/slides/src/images/jhipster-logo.png"></p>
+<p align="center"><img src="https://github.com/fdelbrayelle/midi-epitech-jhipster/blob/master/slides/src/images/jhipster-logo.png"></p>
 
-Ce dépôt contient les [slides](https://github.com/fdelbrayelle/lundi-tech-jhipster/blob/master/slides) et la [démo](https://github.com/fdelbrayelle/lundi-tech-jhipster/blob/master/demo) du midi technique effectué le lundi 7 octobre 2019 à Ippon Technologies Lille.
+Ce dépôt contient les [slides](https://github.com/fdelbrayelle/midi-epitech-jhipster/blob/master/slides) et la [démo](https://github.com/fdelbrayelle/midi-epitech-jhipster/blob/master/demo) du midi technique effectué le mercredi 27 novembre 2019 à Epitech Lille.
 
 Le sujet est centré sur l'outil JHipster qui permet de générer des applications web modernes. Après une courte présentation de ce qu'il est possible de faire et générer (frontend avec Angular ou React, backend avec Spring Boot notamment), une démo a été effectuée pour générer un monolithe et la possibilité de générer des microservices a été développée.
 
-Les supports peuvent être librement modifiés et réutilisés. Les slides ont également été [exportés au format PDF](https://github.com/fdelbrayelle/lundi-tech-jhipster/blob/master/slides/presentation.pdf).
+Les supports peuvent être librement modifiés et réutilisés. Les slides ont également été [exportés au format PDF](https://github.com/fdelbrayelle/midi-epitech-jhipster/blob/master/slides/presentation.pdf).
 
 ## Étapes de la démo
 
